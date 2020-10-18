@@ -105,27 +105,77 @@
     <br /> With <  b  > and it is displayed in bold.
     <br />
 
-    <br /><b>Questions of the second week:</b>
-    <br />1)Name the components of html elements properly:
-    <br />An HTML element is defined by a start tag, some content, and an end tag.
+    <h1>Questions of the second week:</h1>
+    <h1>1)Name the components of html elements properly:</h1>
+    <br />An HTML element is defined by a start tag, some content, and an end tag.The HTML document itself begins with < html> and ends with < /html>.
+    <br />The visible part of the HTML document is between < body> and < /body>.
+
+
+    <h1>2)Identify void elements and how they are denoted:</h1>
+    <br /> Void Elements dont have an end tag. Empty Elements (< br />)
     <br />
 
-    <br />2)Identify void elements and how they are denoted:
-    <br /> Void Elements dont have an end tag.
-    <br />
-
-    <br />3)Identify attributes:
+    <h1><b>3)Identify attributes:</b></h1>
     <br />All HTML elements can have <b>attributes</b>
     <br />Attributes provide <b>additional information</b> about elements
     <br />Attributes are always specified in <b>the start tag</b>
     <br />Attributes usually come in name/value pairs like: <b>name="value"</b>
+
+    <p>The href Attribute: The < a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:</p>
+
+    <p>The src Attribute:The < img> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed:< img src="img_girl.jpg"></p>
+    <p>There are two ways to specify the URL in the src attribute:1. Absolute URL - Links to an external image that is hosted on another website. Example: src= "https://www.w3schools.com/images/img_girl.jpg".</p>
+    <p>2. Relative URL - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".</p>
+    <p>Tip: It is almost always best to use relative URLs. They will not break if you change domain.</p>
+
+    <p>The width and height Attributes:The < img> tag should also contain the width and height attributes, which specifies the width and height of the image (in pixels):< img src="img_girl.jpg" width="500" height="600"></p>
+
+    <p>The alt Attribute:The required alt attribute for the <img> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to slow connection, or an error in the src attribute, or if the user uses a screen reader.(< img src="img_girl.jpg" alt="Girl with a jacket")></p>
+
+    <p>The style Attribute:The style attribute is used to add styles to an element, such as color, font, size, and more.(< p style="color:red;">This is a red paragraph.< /p>)</p>
+
+    <p>The lang Attribute:You should always include the lang attribute inside the < html> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.</p>
+    <p>The title Attribute:The title attribute defines some extra information about an element.(< p title="I'm a tooltip">This is a paragraph.</p>
+
+
+    <br /><b>>All HTML elements can have attributes</b>
+
+    <br />< a > specifies the URL of the page the link goes to
+
+    <br />The src attribute of < img> specifies the path to the image to be displayed
+
+    <br />The width and height attributes of < img> provide size information for images
+
+    <br />The alt attribute of < img> provides an alternate text for an image
+
+    <br />The style attribute is used to add styles to an element, such as color, font, size, and more
+
+    <br />The lang attribute of the < html> tag declares the language of the Web page
+
+    <br />The title attribute defines some extra information about an element
+
+
+
+    <h1>4)Write down the correct DOCTYPE declaration for html 5</h1>
+    <br />< !DOCTYPE html> The < !DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.
     <br />
 
-    <br />4)Write down the correct DOCTYPE declaration for html 5
-    <br />< !DOCTYPE html>
-    <br />
+    <br /><b>HTML Headings:</b> HTML headings are defined with the < h1> to < h6> tags.(< h1> < /h1>)
+    <br /><b>HTML Links:</b>HTML links are defined with the < a>tag:< a href="https://www.w3schools.com">This is a link< /a>
+    <p><b>HTML Paragraphs:</b>HTML paragraphs are defined with the < p> tag:< p>This is a paragraph.< /p></p>
+    <p><b>HTML Images:</b>HTML images are defined with the < img> tag.The source file (src), alternative text (alt), width, and height are provided as attributes:< img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"></p>
+    <p>The < img> tag is empty, it contains attributes only, and does not have a closing tag.</p>
+    <p><b>Images in Another Folder:If you have your images in a sub-folder, you must include the folder name in the src attribute(< img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"></b></p>
+    <p><b>Images on Another Server/Website:</b>Some web sites points to an external image on another server.To point to an image on another server, you must specify an absolute (full) URL in the src attribute:< img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"></p>
 
-    <p>5)Write down syntactically correct statements for the following elements</p>
+    <p>HTML Elements:An HTML element is defined by a start tag, some content, and an end tag:< h1 Start Tag >My First Heading Content < /h1 Endtag> </p>
+    <p> Some HTML elements have no content (like the < br> element). These elements are called empty elements. Empty elements do not have an end tag!</p>
+    <p>Nested HTML Elements:HTML elements can be nested (this means that elements can contain other elements).</p>
+    <p>Empty HTML Elements(Void Elemnts):HTML elements with no content are called empty elements.The < br> tag defines a line break, and is an empty element without a closing tag:</p>
+    <p>HTML is Not Case Sensitive</p>
+    <p>HTML tags are not case sensitive: < P> means the same as < p>.</p>
+
+    <h1>5)Write down syntactically correct statements for the following elements</h1>
     <br />Article
     <article>
         HTL Leonding
@@ -143,63 +193,115 @@
     <br />
     <br />Link:
     <a href="edufs.edu.htl-leonding.ac.at">school</a> <!--comment test-->
+    <p><b>The < title> element is required and it defines the title of the document</b></p>
+    <p><b>The < meta> element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings</b></p>
 
-    <h2>Css(Cascading Style Sheets)</h2>
-    <br />1.Name the components of a css rule properly:
+    <h1>Css(Cascading Style Sheets)</h1>
+    <h1>1.Name the components of a css rule properly:</h1>
     <br />selector: points to the HTML element you want to style.
-    <br />declaration: contains one or more declarations separated by semicolons.Each declaration includes a CSS property name and a value, separated by a colon.
+    <br />declaration block: contains one or more declarations separated by semicolons.Each declaration includes a CSS property name and a value, separated by a colon.
     <br /><img src="https://www.w3schools.com/css/selector.gif" alt="CSS-Syntax" />
+    <p>Each declaration includes a CSS property name and a value, separated by a colon. Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</p>
     <br />
 
-    <br />2.Use combinators properly: direct child, descendant, adjacent sibling, sibling
+    <h1>2.Use combinators properly: direct child, descendant, adjacent sibling, sibling</h1>
     <br />
 
-    <br />3.Specify colors by color names and in hexadecimal notation
+    <h1>3.Specify colors by color names and in hexadecimal notation</h1>
     <br />Red FF0000, Yellow FFFF00, Green 008000, blue 0000FF
     <br />Background Color:< h1 style="background-color:DodgerBlue;">Hello World< /h1>
     <br />Text Color:< h1 style="color:Tomato;">Hello World< /h1>
     <br />Border Color: < h1 style="border:2px solid Medium SeaGreen;">Hello World h1>
     <br />
 
-    <br />4.Declarations for color, background color
+    <h1>4.Declarations for color, background color</h1>
     <br />Color:Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values
     <br />Background Colors:The CSS background properties are used to define the background effects for elements. (background-color: lightblue;opacity: 0.3;)
+    <p>The background-image property specifies an image to use as the background of an element.By default, the image is repeated so it covers the entire element.</p>
+    <p>By default, the background-image property repeats an image both horizontally and vertically.</p>
+    <p>The background-position property is used to specify the position of the background image.</p>
     <br />
 
-    <br />5.Pseudo classes for the < a> element
+    <h1>5.Pseudo classes for the < a> element</h1>
     <br />A pseudo-class is used to define a special state of an element.
     <br />
 
-    <br />6.Declaration for background image:The background-image property specifies an image to use as the background of an element.(background-image: url("paper.gif");)
+    <h1>6.Declaration for background image:</h1>The background-image property specifies an image to use as the background of an element.(background-image: url("paper.gif");)
     <br />Opacity: specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0.
     <br />
 
-    <br />7.Declaration for text alignment (left, right, center, justify):The text-align property is used to set the horizontal alignment of a text. A text can be left or right aligned, centered, or justified.(text-align: center)
+    <h1>7.Declaration for text alignment (left, right, center, justify):</h1>The text-align property is used to set the horizontal alignment of a text. A text can be left or right aligned, centered, or justified.(text-align: center)
+    <h1>8.Declaration for text decoration (overline, underline, line-through):</h1>The text-decoration property is used to set or remove decorations from text.( text-decoration: overline)
+    <p>The color property is used to set the color of the text</p>
     <br />
 
-    <br />8.Declaration for text decoration (overline, underline, line-through):The text-decoration property is used to set or remove decorations from text.( text-decoration: overline)
+    <h1>9.Declaration for text transformation (uppercase, lowercase, capitalize)</h1>:The text-transform property is used to specify uppercase and lowercase letters in a text.(text-transform: uppercase;)
     <br />
 
-    <br />9.Declaration for text transformation (uppercase, lowercase, capitalize):The text-transform property is used to specify uppercase and lowercase letters in a text.(text-transform: uppercase;)
-    <br />
-
-    <br />10.Identify the difference between serif and sans-serif fonts:
+    <h1>10.Identify the difference between serif and sans-serif fonts:</h1>
     <br />Serif:Serif fonts have small lines at the ends on some characters(Times New Roman,Georgia)
     <br />Sans-serif:"Sans" means without - these fonts do not have the lines at the ends of characters(Arial)
     <br />
 
-    <br />11.Declarations for font families:The font-family property should hold several font names as a "fallback" system. Start with the font you want, and end with a generic family, to let the browser pick a similar font in the generic family, if no other fonts are available.(font-family: "Times New Roman", Times, serif;)
+    <h1>11.Declarations for font families:</h1>The font-family property should hold several font names as a "fallback" system. Start with the font you want, and end with a generic family, to let the browser pick a similar font in the generic family, if no other fonts are available.(font-family: "Times New Roman", Times, serif;)
     <br />
 
-    <br />12.Declarations for font style normal and italic:The font-style property is mostly used to specify italic text.
+    <h1>12.Declarations for font style normal and italic:</h1>The font-style property is mostly used to specify italic text.
     <br />front style normal:The text is shown normally
     <br />front style italic:The text is shown in italics
     <br />
 
-    <br />13.Declarations for font sizes:The font-size property sets the size of the text.(h1{font-size: 40px;})
+    <h1>13.Declarations for font sizes:</h1>The font-size property sets the size of the text.(h1{font-size: 40px;})
     <br />Absolute size:Sets the text to a specified size,Does not allow a user to change the text size in all browsers (bad for accessibility reasons),Absolute size is useful when the physical size of the output is known
     <br />Relative Size:Sets the size relative to surrounding elements,Allows a user to change the text size in browsers
     <br />
+    <p>Setting the text size with pixels gives you full control over the text size:(< h1>font-size: 40px;< /h1></p>
+    <p>
+        To allow users to resize the text (in the browser menu), many developers use em instead of pixels.The em size unit is recommended by the W3C.1em is equal to the current font size. The default text size in browsers is 16px. So, the default size of 1em is 16px.
+    </p>
+    <br />
 
-    <br />14.Declarations for font weights:The font-weight property specifies the weight of a font(font-weight: normal;)
+    <h1>14.Declarations for font weights:</h1>The font-weight property specifies the weight of a font(font-weight: normal;)
+
+    <h1>Styling Links:</h1>
+    <p>Links can be styled with any CSS property (e.g. color, font-family, background, etc.).</p>
+
+    <h1>CSS Combinators:</h1>
+    <p>A combinator is something that explains the relationship between the selectors.</p>
+    <h2>Descendant Selector:</h2>
+    <p>The descendant selector matches all elements that are descendants of a specified element.</p>
+    <h2>Child Selector:</h2>
+    <p>The child selector selects all elements that are the children of a specified element.</p>
+    <h2>Adjacent Sibling Selector:</h2>
+    <p>The adjacent sibling selector selects all elements that are the adjacent siblings of a specified element.he adjacent sibling selector selects all elements that are the adjacent siblings of a specified element.</p>
+    <h2>General Sibling Selector:</h2>
+    <p>The general sibling selector selects all elements that are siblings of a specified element.</p>
+    <h2>All CSS Combinator Selectors:</h2>
+    <p>Selector     	    Example         	Example description</p>
+    <p>element element	    div p	            Selects all < p> elements inside < div> elements</p>
+    <p>element>element	    div > p	            Selects all < p> elements where the parent is a < div> element</p>
+    <p>element+element	    div + p	            Selects all < p> elements that are placed immediately after < div> elements</p>
+    <p>element1~element2	p ~ ul	            Selects every < ul> element that are preceded by a < p> element</p>
+
+    <h1>CSS Pseudo-classes</h1>
+    <p>A pseudo-class is used to define a special state of an element.</p>
+    <p>
+        Style an element when a user mouses over it ,
+        Style visited and unvisited links differently ,
+        Style an element when it gets focus
+    </p>
+    <h2>
+        Syntax:selector:pseudo-class {
+        property: value;
+        }
+    </h2>
+    <h2>Hover on < div></h2>
+    <p>An example of using the :hover pseudo-class on a < div> element:</p>
+    <p>
+        div:hover {
+        background-color: blue;
+        }
+    </p>
+    <h2>CSS - The :first-child Pseudo-class</h2>
+    <p>The :first-child pseudo-class matches a specified element that is the first child of another element.</p>
 </html>
